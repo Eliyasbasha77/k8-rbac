@@ -1,25 +1,25 @@
 
-apiVersion: v1
-data:
-  mapRoles: |
-    - rolearn: arn:aws:iam::647066518166:role/eksctl-roboshop-dev-nodegroup-robo-NodeInstanceRole-GElBPYu9MNQf
-      groups:
-      - system:bootstrappers
-      - system:nodes
-      username: system:node:{{EC2PrivateDNSName}}
-  mapUsers: |
-    - groups:
-      - roboshop-trainee
-      userarn: arn:aws:iam::647066518166:user/eliyas
-      username: eliyas  
-    - groups:
-      - roboshop-admin
-      userarn: arn:aws:iam::647066518166:user/hussain
-      username: hussain  
-     - groups:
-      - roboshop-trainee
-      userarn: arn:aws:iam::647066518166:user/john
-      username: john   
+# apiVersion: v1
+# data:
+#   mapRoles: |
+#     - rolearn: arn:aws:iam::647066518166:role/eksctl-roboshop-dev-nodegroup-robo-NodeInstanceRole-GElBPYu9MNQf
+#       groups:
+#       - system:bootstrappers
+#       - system:nodes
+#       username: system:node:{{EC2PrivateDNSName}}
+#   mapUsers: |
+#     - groups:
+#       - roboshop-trainee
+#       userarn: arn:aws:iam::647066518166:user/eliyas
+#       username: eliyas  
+#     - groups:
+#       - roboshop-admin
+#       userarn: arn:aws:iam::647066518166:user/hussain
+#       username: hussain  
+#      - groups:
+#       - roboshop-trainee
+#       userarn: arn:aws:iam::647066518166:user/john
+#       username: john   
      - groups:
       - roboshop-trainee
       userarn: arn:aws:iam::647066518166:user/rahim
